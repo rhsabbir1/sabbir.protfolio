@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabbir Hossain - WordPress & Elementor Developer</title>
+    <style>
+        /* Hero Section with Particles - Responsive Fix */
+        .hero {
+            height: 100vh;
+            min-height: 600px; /* Added minimum height */
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            background-color: var(--darker);
+            padding: 80px 20px; /* Added padding for mobile */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%; /* Full width on mobile */
+            padding: 0 15px; /* Adjusted padding for mobile */
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 6vw, 3.5rem); /* Responsive font size */
+            margin-bottom: 15px;
+            line-height: 1.2; /* Tighter line height for mobile */
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem); /* Responsive font size */
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .hero-description {
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem); /* Responsive font size */
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
+            padding: 0 10px; /* Added padding for better mobile readability */
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+            gap: 15px;
+            justify-content: center;
+            margin-top: 50px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px 15px; /* Reduced padding for mobile */
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stat-number {
+            font-size: clamp(1.8rem, 5vw, 2.5rem); /* Responsive font size */
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: clamp(0.8rem, 2.5vw, 1rem); /* Responsive font size */
+            opacity: 0.8;
+        }
+
+        /* Media Queries for Further Adjustments */
+        @media (min-width: 576px) {
+            .hero-stats {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+                gap: 20px;
+            }
+            
+            .hero-btns {
+                flex-wrap: nowrap; /* Keep buttons in one line */
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                padding: 0; /* Remove padding on larger screens */
+            }
+            
+            .hero-content {
+                padding: 0 20px; /* Restore original padding */
+            }
+            
+            .hero-title {
+                line-height: 1.1; /* Original line height */
+            }
+            
+            .stat-item {
+                padding: 20px 30px; /* Original padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with Particles -->
+    <section class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Sabbir Hossain</h1>
+                <h2 class="hero-subtitle">WordPress & Elementor Expert</h2>
+                <p class="hero-description">With 4+ years of experience, I create responsive, user-friendly websites that are conversion-focused, fast-loading, and scalable. Specializing in Elementor Pro and WooCommerce solutions.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="90">0</div>
+                        <div class="stat-label">PageSpeed Score</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of your HTML content -->
+</body>
+</html>
