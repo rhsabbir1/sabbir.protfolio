@@ -304,6 +304,7 @@
         }
         
         .about-img {
+            max-width:500px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -313,6 +314,9 @@
         .about-img:hover {
             transform: scale(1.02);
         }
+
+
+        
         
         .about-text h3 {
             font-size: 2rem;
